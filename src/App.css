@@ -1,0 +1,270 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #dbcccc;
+    color: #0e0d0d;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 10px;
+    color: #2A7538; 
+  }
+  
+  button {
+    background-color: #2A7538;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #196D2A; 
+  }
+  
+  .plp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .plp-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .plp-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .plp-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .plp-card p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .plp-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pdp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .pdp img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .pdp button {
+    margin-top: 10px;
+    width: 180px;
+  }
+  
+  .cart-main, .wishlist-main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(247, 242, 242);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item, .wishlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgb(247, 242, 242);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .cart-item img, .wishlist-item img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  
+  .cart-item h3, .wishlist-item h3 {
+    font-size: 16px;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .cart-item p, .wishlist-item p {
+    margin: 0;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .navbar {
+    background-color: #2A7538;
+    padding: 10px;
+    color: rgb(6, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .nav-left {
+    flex: 1;
+  }
+  
+  .brand-name {
+    font-weight: bold;
+    font-size: 24px; 
+  }
+  .nav-right {
+    display: flex;
+    gap: 20px; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-right li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px; 
+  }
+  
+  .nav-right li a:hover {
+    color: #007BFF; 
+  }
+  .navbar a {
+    color: rgb(10, 9, 9);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .plp {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .plp-card {
+        width: 90%;
+    }
+  
+    .pdp {
+        width: 90%;
+    }
+  }
+  
+  
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .navbar ul li {
+    margin-right: 20px; 
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: black; 
+    font-size: 16px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #007bff;
+  }
+  
+  .navbar {
+    padding: 10px 20px;
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #ddd;
+  }
+  .quantity-controls {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+  }
+  
+  
+  .quantity-text {
+    margin: 0; 
+    font-size: 16px; 
+  }
+  
+  
+  
+  .price-filter {
+    display: flex;               
+    justify-content: flex;   
+    margin: 20px;               
+    width: 100px; 
+    height: 20px; 
+    font-size: 13px; 
+    padding: 10px;
+  }
+  
+  .price-filter label {
+    display: flex;               
+    align-items: center;    
+    margin-right: 20px;   
+     
+  }
+  
+  .price-filter input {
+    margin-left: 10px;          
+  }
+  
+  
+  .popup-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+  }
+  
